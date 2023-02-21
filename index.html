@@ -1,50 +1,36 @@
 <!DOCTYPE html>
-<html lang="en" style="background-color: black">
+<html lang="en">
   <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L67JL044NV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
-
-  gtag('config', 'G-L67JL044NV');
-</script>
-    <style>
-      #oliver {
-          position: fixed;
-          bottom: 25px;
-          right: 1px;
-          display: flex;
-          flex-direction: column;
-          text-align: right;
-      }
-      a {
-        color: rgb(0, 207, 83)
-      }
-      #links {
-        font-size: 20px;
-      }
-    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L67JL044NV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+      gtag('config', 'G-L67JL044NV');
+    </script>
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./main.css">
     <meta charset="utf-8" />
-    <title>Ishank Tandon</title>
+    <title>ishank</title>
   </head>
   <body>
+    <canvas id="canvas">
+    </canvas>
     <div id="links">
-      <a href="./ishank_resume.pdf" target="_blank">resume</a>
-      &nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="https://github.com/tandoni" target="_blank">github</a>
-      &nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="https://linkedin.com/in/ishanktandon" target="_blank">linkedin</a>
-      &nbsp;&nbsp;&nbsp;&nbsp;
-    </div>
+    <a href="./resume_ishank_jan2023.pdf" target="_blank">resume</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://github.com/tandoni" target="_blank">github</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://linkedin.com/in/ishanktandon" target="_blank">linkedin</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+  </div>
+  
+  <div id="oliver">
+    <img height="200px" width="140px" src="./olivertheflerken.jpeg"/>
+    ^ oliver
+  </div>
 
 
-    <div id="oliver">
-      <img height="200px" width="140px" src="./olivertheflerken.jpeg"/>
-      <a target="_blank" href="https://www.instagram.com/olivertheflerken">^ oliver
-      </a>
-    </div>
+  <script src="stars.js"></script>
   </body>
 </html>
