@@ -4,7 +4,8 @@
     <script type="importmap">
       {
         "imports": {
-          "three": "https://unpkg.com/three@v0.158.0/build/three.module.js"
+          "three": "https://unpkg.com/three@v0.158.0/build/three.module.js",
+          "simplex-noise": "https://unpkg.com/simplex-noise@4.0.3/dist/esm/simplex-noise.js"
         }
       }
     </script>
@@ -24,7 +25,7 @@
     <canvas id="canvas">
     </canvas>
     <div id="links">
-    <a href="./august_2025.pdf" target="_blank">resume</a>
+    <a href="./august_2026.pdf" target="_blank">resume</a>
     &nbsp;&nbsp;&nbsp;&nbsp;
     <a href="https://github.com/tandoni" target="_blank">github</a>
     &nbsp;&nbsp;&nbsp;&nbsp;
@@ -38,6 +39,9 @@
   </div>
 
 
-  <script type="module" crossorigin="anonymous" src="stars2.js"></script>
+  <script type="module" crossorigin="anonymous">
+    import { start } from './sphere.js';
+    start(document.getElementById('canvas'));
+  </script>
   </body>
 </html>
